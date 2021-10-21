@@ -1,5 +1,5 @@
 # HomeworkBot
-A Discord Bot that reminds you of HW
+A Java Discord Bot that reminds you of HW and other general announcements.
 ## Setup
 In the [.env](https://github.com/ChimmyUnited/HomeworkBot/blob/main/.env) file, you will find
 ```shell
