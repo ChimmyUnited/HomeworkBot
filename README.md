@@ -1,7 +1,8 @@
 # HomeworkBot
 A Discord Bot that reminds you of HW
 ## Setup
-```bash
+In the [.env](https://github.com/ChimmyUnited/HomeworkBot/blob/main/.env) file, you will find
+```shell
 TOKEN=
 PREFIX=
 SEMINOLE_ID=
