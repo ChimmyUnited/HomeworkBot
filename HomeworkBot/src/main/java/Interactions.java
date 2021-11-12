@@ -11,6 +11,7 @@ public class Interactions extends ListenerAdapter {
     // Create view slash command
     public void onReady(ReadyEvent event) {
         Main.jda.upsertCommand("view", "display personalized homework with its due dates to the user").queue();
+        Main.jda.getGuildById(Main.SeminoleID).upsertCommand("view", "display personalized homework with its due dates to the user").queue();
     }
 
     public void onSlashCommand(SlashCommandEvent event) {
