@@ -5,13 +5,13 @@ import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.InteractionHook;
+import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 
 public class Interactions extends ListenerAdapter {
 
     // Create view slash command
     public void onReady(ReadyEvent event) {
-        Main.jda.upsertCommand("view", "display personalized homework with its due dates to the user").queue();
-        Main.jda.getGuildById(Main.SeminoleID).upsertCommand("view", "display personalized homework with its due dates to the user").queue();
+        Main.jda.updateCommands().addCommands(new CommandData("view", "display personalized homework with its due dates to the user")).queue();
     }
 
     public void onSlashCommand(SlashCommandEvent event) {
